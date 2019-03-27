@@ -67,7 +67,8 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.map {|holidays, supplies|
       holiday_alter1 = holidays.to_s
       holiday_alter2 = holiday_alter1.split
-      holiday_alter3 = holiday_alter2.capitalize
+      holiday_alter3 = holiday_alter2.map {|x| 
+        x.capitalize}
       final_holiday = holiday_alter3.join(" ")
       
       final_supplies = supplies.join(" ")
