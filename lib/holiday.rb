@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.map {|season, holiday|
     season_alter1 = season.to_s
     final_seasons = season_alter1.capitalize
-    final_seasons
+    return final_seasons
   }
     
   holiday_hash.map {|season, holiday|
