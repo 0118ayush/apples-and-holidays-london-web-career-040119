@@ -78,10 +78,10 @@ def all_supplies_in_holidays(holiday_hash)
       final_supplies = supplies.join(" ")
     }
   }
-  
-  puts "#{final_seasons}:
+  <<-TEXT
+        #{final_seasons}:
               #{final_holiday}: #{final_supplies}"
-      
+      TEXT
       
 end
 
